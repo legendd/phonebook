@@ -16,7 +16,7 @@ typedef struct __PHONE_BOOK_ENTRY {
     char state[2];
     char zip[5];
     struct __PHONE_BOOK_ENTRY *pNext;
-} data;
+}__attribute((packed)) data;;
 
 typedef struct __PHONE_LAST_ENTRY{
     char lastName[MAX_LAST_NAME_SIZE];
