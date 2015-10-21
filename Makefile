@@ -1,6 +1,6 @@
 CC ?= gcc
 #debugging information specifically intended for gdb
-CFLAGS_common ?= -O0 -Wall -ggdb -std=gnu99
+CFLAGS_common ?= -O3 -Wall -ggdb -std=gnu99
 # show specific messages
 perf = stat -r 5 -e cache-misses,cache-references,cs,cpu-clock,L1-dcache-loads,L1-icache-loads
 
